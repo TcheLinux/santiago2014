@@ -1,4 +1,6 @@
-TcheLinux Bento Gonçalves 2014
+TcheLinux Santiago 2014
 ============
 
-[bento.tchelinux.org](http://bento.tchelinux.org)
+[santiago.tchelinux.org](http://santiago.tchelinux.org)
+
+Based on [bento2014](http://github.com/tchelinux/bento2014)

@@ -36,11 +36,11 @@ $('#buscar_caminho').on('click', function(e) {
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
-var ftec = new google.maps.LatLng(-29.16375, -51.52198);
+var uri = new google.maps.LatLng(-29.194061, -54.8852932);
 directionsDisplay = new google.maps.DirectionsRenderer();
 var mapOptions = {
   zoom:16,
-  center: ftec,
+  center: uri,
   streetViewControl: false,
   panControl: true,
   overviewMapControl: true,
@@ -52,9 +52,9 @@ directionsDisplay = new google.maps.DirectionsRenderer();
 directionsDisplay.setMap(map);
 directionsDisplay.setPanel(document.getElementById('directions-panel'));
 var marker = new google.maps.Marker({
-              position: ftec,
+              position: uri,
               map: map,
-              title:"FTEC Caxias do Sul"
+              title:"URI Campus Santiago"
 });
 
 function calcRoute(starte) {
@@ -62,7 +62,7 @@ function calcRoute(starte) {
   if(starte != undefined) {
     start = starte;
   }
-  var end = ftec;
+  var end = uri;
   var request = {
       origin:start,
       destination:end,
