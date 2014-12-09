@@ -21,6 +21,7 @@
           html { height: 100% }
           body { height: 100%; margin: 0; padding: 0 }
           #map_canvas { height: 100% }
+          table, nav { font-weight: 400; }
         </style>
 
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
@@ -114,7 +115,44 @@
         <section id="programacao">
             <div class="container">
                 <div class="page-header"><h2 class="subtitle">Programação</h2></div>
-                <div class="alert alert-info" role="alert">A grade de palestras será disponibilizada em breve!</div>
+                <table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Horário</th>
+							<th>Palestra</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>13:45</td>
+							<td>Recepção dos Participantes</td>
+						</tr>
+						<tr>
+							<td>14:00</td>
+							<td>Hackerspace: O que? Como? Onde? - <i>por <a href="#" data-toggle="modal" data-target="#luizrauber">Luiz Rauber</a></i></td>
+						</tr>
+						<tr>
+							<td>14:30</td>
+							<td>pfSense, uso comercial - <i>por <a href="#" data-toggle="modal" data-target="#cristianocarvalho">Cristiano Carvalho</a></i></td>
+						</tr>
+						<tr>
+							<td>15:30</td>
+							<td>Firefox OS: A Web é a Plataforma! - <i>por <a href="#" data-toggle="modal" data-target="#samuelmoraes">Samuel Moraes</a></i></td>
+						</tr>
+						<tr>
+							<td>16:30</td>
+							<td>Arduino: Introdução e suas aplicações - <i>por <a href="#" data-toggle="modal" data-target="#edsonaraujo">Edson Araujo</a> e <a href="#" data-toggle="modal" data-target="#douglaszuqueto">Douglas Zuqueto</a></i></td>
+						</tr>
+						<tr>
+							<td>17:30</td>
+							<td>Hackerspace Laboratório Hacker: Como participar? Como funciona? O que podemos explodir? - <i>por <a href="#" data-toggle="modal" data-target="#rogergodoy">Roger Godoy</a> e <a href="#" data-toggle="modal" data-target="#richardfreitas">Richard Freitas</a></i></td>
+						</tr>
+						<tr>
+							<td>18:00</td>
+							<td>Encerramento</td>
+						</tr>
+					</tbody>
+				</table>
             </div>
         </section>
 
@@ -157,6 +195,133 @@
                 </ul>
             </div>
         </section>
+        
+    <div class="modal fade" id="luizrauber" tabindex="-1" role="dialog" aria-labelledby="luizrauber" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title" id="luizrauber">Luiz Rauber</h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/palestrantes/luizrauber.jpg" class="img-circle">
+					Professor universitário na URI Campus Santiago, mestrando em Nanociências (UNIFRA), especialista em Gerenciamento de Projetos (PUCRS/PMI-RS), dentre principais interesses e atuações estão Educação, Bioinformática, Sistemas Operacionais, Gestões de Projetos e Empresarial à Startups. Já palestrou na Campus Party/ Latinoware/ FISL/ Solisc e ajudou nos eventos TDC/ Tchelinux/ Flisol/ DebianDay. É da equipe de Coordenação do GUGP e GU-Mobile ambos pela Sucesu-RS, sócio Lions Club Santiago Centro e ainda pretende fazer sua própria cerveja.
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="modal fade" id="cristianocarvalho" tabindex="-1" role="dialog" aria-labelledby="cristianocarvalho" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title" id="cristianocarvalho">Cristiano Carvalho</h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/palestrantes/cristianocarvalho.jpg" class="img-circle">
+					Formado em Análise Desenvolvimento de Sistemas - Universidade Norte do Paraná, Trabalhei com Informática nas Empresas Nicola Consórcios, Cooperativa Regional Tritícola Santiaguense entre outras hoje Consultor de Tecnologia e Professor Tecnologia do Instituto Professor Isaías.
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="modal fade" id="samuelmoraes" tabindex="-1" role="dialog" aria-labelledby="samuelmoraes" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title" id="samuelmoraes">Samuel Moraes</h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/palestrantes/samuelmoraes.jpg" class="img-circle">
+					Programador, Administrador de sistemas e entusiasta de Software Livre. Tem 15 anos de idade(atualmente cursando o ensino médio) e atua como voluntário na Comunidade Mozilla Brasil, TchêLinux e GU Mobile. Possui como objetivo tornar a web aberta, segura e confiável.
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="modal fade" id="edsonaraujo" tabindex="-1" role="dialog" aria-labelledby="edsonaraujo" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title" id="edsonaraujo">Edson Araujo</h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/palestrantes/edsonaraujo.jpg" class="img-circle">
+					<div class="alert alert-warning" role="alert">Biografia Indisponível</div>
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="modal fade" id="douglaszuqueto" tabindex="-1" role="dialog" aria-labelledby="douglaszuqueto" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title" id="douglaszuqueto">Douglas Zuqueto</h4></h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/palestrantes/douglaszuqueto.jpg" class="img-circle">
+					<div class="alert alert-warning" role="alert">Biografia Indisponível</div>
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="modal fade" id="rogergodoy" tabindex="-1" role="dialog" aria-labelledby="rogergodoy" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title" id="rogergodoy">Roger Godoy</h4></h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/palestrantes/rogergodoy.jpg" class="img-circle">
+					<div class="alert alert-warning" role="alert">Biografia Indisponível</div>
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="modal fade" id="richardfreitas" tabindex="-1" role="dialog" aria-labelledby="richardfreitas" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title" id="richardfreitas">Richard Freitas</h4></h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/palestrantes/richardfreitas.jpg" class="img-circle">
+					<div class="alert alert-warning" role="alert">Biografia Indisponível</div>
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
     <footer>
         <div class="container">
             <div class="row">
