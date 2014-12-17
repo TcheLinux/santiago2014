@@ -107,3 +107,7 @@ $(document).on('click','a.navbar-brand',function(e) {
         $('.navbar-collapse.in').collapse('hide');
     }
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

@@ -22,12 +22,12 @@ p {
 header {
 	padding: 0px 0 62px;
 	text-align: center;
-	background-image: url("images/tchelinux.png");
+	background-image: url("images/tchelinux.png"), url("images/bg.png");
 	background-color: #000;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
+	background-repeat: no-repeat, repeat;
+  background-size: auto 100%, auto auto;
 	background-position: right bottom;
-    box-shadow: 10px 10px 250px 100px #000 inset;
+  box-shadow: 10px 10px 250px 100px #000 inset;
 }
 
 .logo-name{
@@ -230,4 +230,31 @@ a.apoio-logo.apoio-link:hover {
   box-shadow: 0 0 2px rgba(0,0,0,0.6);
   border:5px solid #fff;
   margin-bottom: 20px;
+}
+#slides {
+  background:url('images/bg.png');
+  color:#fff;
+  padding:30px;
+  padding-top:1px;
+  text-align:center;
+}
+.row {
+  padding:0;
+  margin:0;
+}
+#slides .img-thumbnail{
+  background:rgba(0,0,0,0.3);
+  border-color:rgba(0,0,0,0.4);
+  transition:2s;
+}
+#slides .img-thumbnail:hover{
+  background:rgba(0,0,0,0.8);
+  border-color:rgba(0,0,0,0.9);
+  transition:2s;
+}
+#slides img {
+  margin-bottom: 20px;
+}
+#slides .page-header{
+  border:0;
 }
